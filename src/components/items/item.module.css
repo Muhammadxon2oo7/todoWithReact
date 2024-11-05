@@ -1,0 +1,72 @@
+.todoCard{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+    transition: all .5s;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todoCard img{
+    width: 20px;
+    height:20px;
+}
+.todoCard:hover{
+   transition: all .5s;
+    border-bottom: 1px solid #6c63ff;
+    animation: floating 3s ease-in-out infinite; 
+
+}
+.todoCard h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+.todoCard p{
+    color: gray;
+    font-size: 13px;
+}
+.btns{
+    width: auto;
+    display: flex;
+    gap: 6px;
+}
+.btns button{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+.btns button:hover{
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+.editinput{
+    border-radius: 5px;
+    padding: 8px 16px;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+    border: none;
+    background-color: #6c63ff;
+}
+@keyframes floating {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
